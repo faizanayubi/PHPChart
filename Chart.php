@@ -8,12 +8,20 @@
 class Chart {
 
     public $data;
+    public $img;
     public $barWidth = 20;
 
     public function __construct($data) {
         $this->data = $data;
     }
 
+    /**
+     * Method to Draw Bar Graph
+     * 
+     * @param type $img_width Set Graph width
+     * @param type $img_height Sets Graph Height
+     * @param type $margins Sets Margin around Graph
+     */
     function drawBar($img_width = 450, $img_height = 300, $margins = 20) {
         //Finding the size of graph by substracting the size of borders
         $graph_width = $this->automargin($img_width, $margins);
@@ -63,9 +71,14 @@ class Chart {
         }
         $this->img = $img;
     }
-    
+
     function automargin($length, $margin) {
         return $length - $margin * 2;
+    }
+
+    function __destruct() {
+        header("Content-type:image/png");
+        imagepng($this->img);
     }
 
 }
