@@ -63,5 +63,9 @@ class Chart {
         }
         $this->img = $img;
     }
+    
+    function automargin($length, $margin) {
+        return $length - $margin * 2;
+    }
 
 }
