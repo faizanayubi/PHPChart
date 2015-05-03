@@ -29,3 +29,7 @@ Finally Call the drawBar method to draw bar
 ```
 $chart->drawBar();
 ```
+
+### Example ###
+A simple Bar Graph
+![Bar Graph](https://github.com/faizanayubi/PHPChart/blob/master/example.png?raw=true)
