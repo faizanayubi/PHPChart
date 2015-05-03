@@ -72,6 +72,12 @@ class Chart {
         $this->img = $img;
     }
 
+    /**
+     * Adjust Margin for graphs
+     * @param type $length
+     * @param type $margin
+     * @return type
+     */
     function automargin($length, $margin) {
         return $length - $margin * 2;
     }
