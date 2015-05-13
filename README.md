@@ -33,3 +33,29 @@ $chart->drawBar();
 ### Example ###
 A simple Bar Graph
 ![Bar Graph](https://github.com/faizanayubi/PHPChart/blob/master/example.png?raw=true)
+
+### How to Use ###
+Include the Chart Class
+```
+include 'Chart.php';
+```
+
+Initialize the Class by adding Data to show in Array
+```
+$chart = new Chart(array(
+    "Jan" => 110,
+    "Feb" => 130,
+    "Mar" => 215,
+    "Apr" => 81,
+    "Nov" => 150,
+    "Dec" => 196
+));
+```
+
+Finally Call the drawBar method to draw bar
+```
+$chart->drawPie();
+
+### Example ###
+A simple Bar Graph
+![Bar Graph](https://github.com/faizanayubi/PHPChart/blob/master/example_pie.png?raw=true)
