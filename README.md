@@ -52,10 +52,10 @@ $chart = new Chart(array(
 ));
 ```
 
-Finally Call the drawBar method to draw bar
+Finally Call the drawPie method to draw Pie Graph
 ```
 $chart->drawPie();
 
 ### Example ###
-A simple Bar Graph
-![Bar Graph](https://github.com/faizanayubi/PHPChart/blob/master/example_pie.png?raw=true)
+A simple PIe Graph
+![Pie Graph](https://github.com/faizanayubi/PHPChart/blob/master/example_pie.png?raw=true)
